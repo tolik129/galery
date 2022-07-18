@@ -986,6 +986,8 @@ textarea {
 	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 	border-radius: 8px;
 	padding-bottom: 42px;
+	width: 393px;
+   
 }
 
 .container a:hover{
@@ -993,8 +995,9 @@ textarea {
 }
 
     
-.container a img{
-	width: 100%;
+.container a .prew{
+	width: 346px;
+     height: 192px;
 }
 .container .wraper{
 	display: flex;
@@ -1028,3 +1031,149 @@ textarea {
          border: 5px solid #ffe3e7;
     border-radius: 50%;
 }
+
+/*modal style*/
+
+.overlay-0 {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	display: none;
+	background-color: rgba(0, 0, 0, .8);
+}
+.overlay-1 {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	display: none;
+	background-color: rgba(0, 0, 0, .8);
+}
+.overlay-2 {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	display: none;
+	background-color: rgba(0, 0, 0, .8);
+}
+.overlay-3 {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	display: none;
+	background-color: rgba(0, 0, 0, .8);
+}
+.overlay-4 {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	display: none;
+	background-color: rgba(0, 0, 0, .8);
+}
+.overlay-5 {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	display: none;
+	background-color: rgba(0, 0, 0, .8);
+}
+.popup {
+	position: absolute;
+	width: 1200px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+    border-radius: 5px;
+	box-sizing: border-box;
+	background: #fff;
+	color: pink;
+	display: flex;
+}
+
+.popup .galery{
+    width: 50%;
+}
+.popup .content{
+	
+}
+.popup .content h2{
+	color: #2F2F34;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 122%;
+}
+.popup .content h2 span{
+	color: #00B140;
+	display: block;
+}
+.popup .content h5{
+	color: #2F2F34;
+	font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 140%;
+}
+.popup .content ul{
+	    margin: 0;
+    padding-left: 17px;
+}
+.popup .content ul li{
+	font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 140%;
+/* or 21px */
+
+
+/* #2F2F34 */
+
+color: #2F2F34;
+}
+
+.close-popup {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+}
+
+.close-popup:before {
+	content: '';
+	background-color: #fff;
+	position: absolute;
+	height: 1px;
+	width: 20px;
+	top: 11px;
+	left: -4px;
+	transform: rotate(-45deg);
+}
+
+.close-popup:after {
+	content: '';
+	background-color: #fff;
+	position: absolute;
+	height: 1px;
+	width: 20px;
+	top: 11px;
+	transform: rotate(45deg);
+	left: -4px;
+}
+
+
+
+

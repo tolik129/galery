@@ -16,79 +16,39 @@ get_header();
 ?>
 
 <div class="container">
-	<a href="">
-		<img src="<?php bloginfo('template_url'); ?>/img/item-1.png" alt="">
+
+<?php if (have_rows('Cart')) : ?>
+	<?php while (have_rows('Cart')) : the_row(); ?>
+		<?php
+		$img = get_sub_field('img');
+		$title =  get_sub_field('title');
+		$description =  get_sub_field('description');
+		$icon =  get_sub_field('icon');
+		
+		?>
+
+	<a href="#" class="button">
+		<img src="<?= $img ?>" alt="">
        <div class="wraper">
        	  <div class="wraper__item ">
-       	  	<h3>Программа</h3>
-       	  	<p>Мастер-классы от звeзд украинского шоу-бизнеса</p>
+       	  	<h3><?= $title ?>asad</h3>
+       	  	<p><?= $description ?></p>
        	  </div>
        	  <div class="wraper__item icon">
-       	  	<img src="<?php bloginfo('template_url'); ?>/img/icon.png" alt="">
+       	  	<img src="<?= $icon ?>" alt="">
        	  </div>
        </div>
 	</a>
-	<a href="">
-		<img src="<?php bloginfo('template_url'); ?>/img/item-1.png" alt="">
-       <div class="wraper">
-       	  <div class="wraper__item">
-       	  	<h3>Программа</h3>
-       	  	<p>Мастер-классы от звeзд украинского шоу-бизнеса</p>
-       	  </div>
-       	  <div class="wraper__item icon">
-       	  	<img src="<?php bloginfo('template_url'); ?>/img/icon.png" alt="">
-       	  </div>
-       </div>
-	</a>
-	<a href="">
-		<img src="<?php bloginfo('template_url'); ?>/img/item-1.png" alt="">
-       <div class="wraper">
-       	  <div class="wraper__item">
-       	  	<h3>Программа</h3>
-       	  	<p>Мастер-классы от звeзд украинского шоу-бизнеса</p>
-       	  </div>
-       	  <div class="wraper__item icon">
-       	  	<img src="<?php bloginfo('template_url'); ?>/img/icon.png" alt="">
-       	  </div>
-       </div>
-	</a>
-	<a href="">
-		<img src="<?php bloginfo('template_url'); ?>/img/item-1.png" alt="">
-       <div class="wraper">
-       	  <div class="wraper__item">
-       	  	<h3>Программа</h3>
-       	  	<p>Мастер-классы от звeзд украинского шоу-бизнеса</p>
-       	  </div>
-       	  <div class="wraper__item icon">
-       	  	<img src="<?php bloginfo('template_url'); ?>/img/icon.png" alt="">
-       	  </div>
-       </div>
-	</a>
-	<a href="">
-		<img src="<?php bloginfo('template_url'); ?>/img/item-1.png" alt="">
-       <div class="wraper">
-       	  <div class="wraper__item">
-       	  	<h3>Программа</h3>
-       	  	<p>Мастер-классы от звeзд украинского шоу-бизнеса</p>
-       	  </div>
-       	  <div class="wraper__item icon">
-       	  	<img src="<?php bloginfo('template_url'); ?>/img/icon.png" alt="">
-       	  </div>
-       </div>
-	</a>
-	<a href="">
-		<img src="<?php bloginfo('template_url'); ?>/img/item-1.png" alt="">
-       <div class="wraper">
-       	  <div class="wraper__item">
-       	  	<h3>Программа</h3>
-       	  	<p>Мастер-классы от звeзд украинского шоу-бизнеса</p>
-       	  </div>
-       	  <div class="wraper__item icon">
-       	  	<img src="<?php bloginfo('template_url'); ?>/img/icon.png" alt="">
-       	  </div>
-       </div>
-	</a>
+    	<?php endwhile; ?>
+<?php endif; ?> 
+
+
+	
 </div>	
+
+
+
+
 
 <?php
 
